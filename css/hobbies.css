@@ -1,0 +1,71 @@
+.hobbies {
+    height: 250px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-rows: 100%;
+}
+#skills__hobbies h1 {
+    color: #ffffff;
+}
+.hobbies__cards {
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+    border: 0.5px solid rgb(77, 76, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 35px;
+
+}
+.hobbies__cards img {
+    filter: invert(97%) sepia(77%) saturate(7490%) hue-rotate(338deg) brightness(96%) contrast(109%);
+}
+
+.hobbies img {
+    background: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+/*=========Responsive===========*/
+
+
+@media screen and (max-width: 425px){
+    .hobbies {
+        height: 250px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        margin-left: 10px;
+    }
+    #skills__hobbies h1 {
+        color: #ffffff;
+    }
+    .hobbies__cards {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5px;
+        margin: 10px;
+        
+    }
+    .hobbies__cards img {
+        filter: invert(79%) sepia(63%) saturate(2952%) hue-rotate(5deg) brightness(110%) contrast(104%);
+    }
+    .hobbies img {
+        background: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .hobbies__cards h2 {
+        font-size: 1rem;
+    }
+    
+}

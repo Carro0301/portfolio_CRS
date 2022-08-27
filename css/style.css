@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+:root {
+    --color--yellow: #FEE20D;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Comfortaa";
+    background: #000000;
+} 
+
+/*====Botão scroll====*/
+.scroll__button img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    filter: invert(97%) sepia(77%) saturate(7490%) hue-rotate(338deg) brightness(96%) contrast(109%);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 425px){
+    .scroll__button {
+        display: none;
+    }
+}
+/*====scroll color====*/
+::-webkit-scrollbar {
+    width: 18px;
+}
+::-webkit-scrollbar-track {
+    background-color: #131313;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(71, 70, 70);
+    border-radius: 8px;
+
+}
+
